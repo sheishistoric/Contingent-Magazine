@@ -9,15 +9,7 @@ get_header();
 	<?php if (of_get_option('use_gcs') && of_get_option('gcs_id')) { ?>
 		<h1>
 			<?php
-				$search_query = esc_html( get_search_query() );
-				if ( empty( $search_query ) ) {
-					echo wp_kses_post( __('Search', 'largo') );
-				} else {
-					echo wp_kses_post( sprintf(
-						__('Search results for <span class="search-term">%s</span>', 'largo'),
-						$search_query
-					) );
-				}
+				printf( __('Search results for <span class="search-term">%s</span>', 'largo'), get_search_query() );
 			?>
 		</h1>
 

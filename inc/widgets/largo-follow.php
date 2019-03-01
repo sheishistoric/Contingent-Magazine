@@ -23,7 +23,7 @@ class largo_follow_widget extends WP_Widget {
 
 		echo $args['before_widget'];
 
-		if ( is_single() && isset($args['id']) && $args['id'] == 'article-bottom' ) {
+		if ( is_single() && isset($id) && $id == 'article-bottom' ) {
 			// display the post social bar
 			largo_post_social_links();
 		} else {

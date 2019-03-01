@@ -5,28 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 though this project doesn't succeed in adhering to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Largo 0.6.2](https://github.com/INN/largo/compare/v0.6.1...0.5-dev)
-
-This release contains bug fixes for Largo 0.6.
-
-### Fixes
-
-- Fixes a regression in the behavior of the Largo Follow widget. [Pull request #1600](https://github.com/INN/largo/pull/1600) for [issue #1599](https://github.com/INN/largo/issues/1599).
-- Fixes issue where post excerpt and featured media were not being used for open graph tags on post types that are `is_singular()` but not `is_single()`. [Pull request #1604)(https://github.com/INN/largo/pull/1604) for [issue #1602](https://github.com/INN/largo/issues/1602).
-- Removes duplicate site title in opengraph tags for non-archive, non-`is_front_page()`, non-`is_singular()` URLs. [Pull request #1604](https://github.com/INN/largo/pull/1604) for [issue #1602](https://github.com/INN/largo/issues/1602).
-- Removes search form from global nav bar when on the search page, so that there's only one search form. [Pull request #1604](https://github.com/INN/largo/pull/1604).
-- Cleans up the search page when no query has been entered. [Pull request #1604](https://github.com/INN/largo/pull/1604) for [issue #1603](https://github.com/INN/largo/issues/1603).
-- Defines the index 'class' in `partials/widget-content.php` when using a large image. [Pull request #1606](https://github.com/INN/largo/pull/1606) for issues [#1605](https://github.com/INN/largo/issues/1605) and [#1492](https://github.com/INN/largo/issues/1492).
-- If Co-Authors Plus is active, and if a post has an `author` term, but the term has no corresponding `guest-author` post, when running `largo_byline()`, the byline will now contain an HTML comment informing why the byline is empty. If the `WP_DEBUG` or `LARGO_DEBUG` constants are true, Largo will add a message to the server's error log of the form "post 123 should have at least one co-author, but has none!" [Pull request #1607](https://github.com/INN/largo/pull/1607) for [Automattic/Co-Authors-Plus#637](https://github.com/Automattic/Co-Authors-Plus/issues/637) and as part of the general cleanup ticket [#1492](https://github.com/INN/largo/issues/1492).
-- Further cleans up undefined variables.
-
-### Upgrade notices
-
-- If you have a custom `partials/nav-global.php` you may want to copy the `if ( ! is_search() ) { ... }` logic from [pull request #1604](https://github.com/INN/largo/pull/1604/) to reduce user confusion about which search form to use.
-
 ## [Largo 0.6.1](https://github.com/INN/largo/compare/v0.6...v0.6.1)
 
-This release contains bug fixes for Largo 0.6.
+This release contains bugfixes for Largo 0.6.
 
 ### Changes
 

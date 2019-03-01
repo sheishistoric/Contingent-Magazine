@@ -262,22 +262,9 @@ class Largo_CoAuthors_Byline extends Largo_Byline {
 			$authors = implode( ', ', array_slice( $out, 0, -1 ) );
 			$authors .= ' <span class="and">' . __( 'and', 'largo' ) . '</span> ' . $out[$key];
 		} else {
-			if ( isset( $out[0] ) ) {
-				$authors = $out[0];
-			} else {
-				$cap_error_message = sprintf(
-					esc_html__( 'post %1$s should have at least one co-author, but has none!', 'largo' ),
-					$this->post_id
-				);
-				if ( WP_DEBUG || LARGO_DEBUG ) {
-					error_log(var_export( $cap_error_message, true));
-				}
-				$authors = sprintf(
-					'<!-- %1$s -->',
-					$cap_error_message
-				);
-			}
+			$authors = $out[0];
 		}
+
 
 		// Now assemble the One True Byline
 		ob_start();

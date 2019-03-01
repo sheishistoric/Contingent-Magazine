@@ -1,0 +1,70 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+	color: #000000;
+}
+.footer-bg {
+  background-color: #223140
+}
+#boilerplate p, footer #boilerplate p {
+    color: #9F9FA3;
+}
+#site-footer .widgettitle, #site-footer li.menu-label {
+    text-align: center;
+}
+p {
+	font-family: "Times New Roman", Times, serif;
+}
+.navbar li.home-icon>a img {width: 390; height: 60px;
+}
+.navbar.sticky-navbar li a {
+    font-family: Sifonn;
+}
+.wp-post-author-shortcode.left {
+    display: none;
+}
+.archive-background .rss-subscribe-link {
+    color: #56b5a4;
+}
+.global-nav {
+display: none;
+}
+.global-nav-bg {
+display: none;
+}
+.navbar .navbar-inner {
+    display: none;
+}
+#main-nav.navbar {
+    display: none;
+}
+h1.branding, h2.branding {
+    display: none;
+}
+.primary-featured-post a {
+    font-family: 'Sifonn';
+    color: #56b5a4;
+}
+h1.page-title {
+	margin-top: 50px;
+}
+.archive-background .rss-subscribe-link {
+    margin-top: 50px;
+}
+.jetpack_widget_social_icons ul {
+    list-style: none;
+    text-align: center;
+}
+.wp-block-button__link{
+	background-color: #223140;
+}
+.wp-block-button .wp-block-button__link {
+    display: inline-block;
+    padding: 14px 35px;
+}
+.sticky-nav-holder.sticky_nav_display{
+	display: block;
+}
+body.normal.single-post.single #main #sidebar,
+body.normal.page.single #main #sidebar {
+  /* all to undo bootstrap */
+  float: left;

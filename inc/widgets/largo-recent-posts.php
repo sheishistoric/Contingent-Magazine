@@ -54,23 +54,17 @@ class largo_recent_posts_widget extends WP_Widget {
 
 		$query_args = array (
 			'post__not_in' 	 => get_option( 'sticky_posts' ),
-			'posts_per_page' => isset( $instance['num_posts'] ) ? $instance['num_posts'] : 3,
+			'posts_per_page' => $instance['num_posts'],
 			'post_status'	=> 'publish'
 		);
 
 		if ( isset( $instance['avoid_duplicates'] ) && $instance['avoid_duplicates'] === 1 ) {
 			$query_args['post__not_in'] = $shown_ids;
 		}
-		if ( ! empty( $instance['cat'] ) ) {
-			$query_args['cat'] = $instance['cat'];
-		}
-		if ( ! empty( $instance['tag'] ) ) {
-			$query_args['tag'] = $instance['tag'];
-		}
-		if ( ! empty( $instance['author'] ) ) {
-			$query_args['author'] = $instance['author'];
-		}
-		if ( ! empty( $instance['taxonomy'] ) && ! empty( $instance['term'] ) ) {
+		if ( $instance['cat'] != '' ) $query_args['cat'] = $instance['cat'];
+		if ( $instance['tag'] != '') $query_args['tag'] = $instance['tag'];
+		if ( $instance['author'] != '') $query_args['author'] = $instance['author'];
+		if ( $instance['taxonomy'] != '') {
 			$query_args['tax_query'] = array(
 				array(
 					'taxonomy'	=> $instance['taxonomy'],
@@ -118,7 +112,7 @@ class largo_recent_posts_widget extends WP_Widget {
 		// close the ul
 		echo '</ul>';
 
-		if( ! empty( $instance['linkurl'] ) ) {
+		if( $instance['linkurl'] !='' ) {
 			echo '<p class="morelink"><a href="' . esc_url( $instance['linkurl'] ) . '">' . esc_html( $instance['linktext'] ) . '</a></p>';
 		}
 		echo $args['after_widget'];

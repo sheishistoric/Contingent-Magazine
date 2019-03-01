@@ -3328,7 +3328,7 @@ body.normal.page .hero p.wp-media-credit {
 body.normal.single-post.single #main #sidebar,
 body.normal.page.single #main #sidebar {
   /* all to undo bootstrap */
-  float: right;
+  float: left;
 }
 body.normal.single-post.single #main #sidebar .widget:first-child,
 body.normal.page.single #main #sidebar .widget:first-child {
@@ -4738,7 +4738,7 @@ body.normal.page .article-bottom .largo-disclaimer {
  *
  * @since 0.5.3
  */
-/* Next-prev navigation 
+/* Next-prev navigation
  * ----------------------
  * These styles were moved from single.less */
 .pager {

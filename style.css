@@ -1,13 +1,240 @@
 /*
-Theme Name: Contingent, edited from Project Largo - Base Theme
-Theme URI: https://largoproject.org
-Description: A revamped version of the responsive news theme developed by the Institute for Nonprofit News (INN). Crafted specifically with the needs of Contingent Magazine in mind.
-Author: Emily Esten &
-Author URI: https://emilyesten.com, https://labs.inn.org/
-Version: 0.6.1
+Theme Name: Contingent Magazine 2019 Theme
+Theme URL: https://github.com/sheishistoric/Contingent-Magazine
+Description: A child theme of Largo, a responsive news theme developed by the Institute for Nonprofit News (INN). Crafted specifically with the needs of Contingent Magazine in mind.
+Author: Emily Esten
+Author URL: https://emilyesten.com
+Version: 0.6.3
 Tags: two-columns, right-sidebar, custom-header, sticky-post, microformats, post-formats, theme-options, featured-images, threaded-comments, editor-style, custom-menu
-Text Domain: Contingent-largo
+Text Domain: largo
+Template:       largo-0.5-dev
+Version:        0.1.0
+*/ Custom CSS goes after this line
 
-License: GPL-2.0
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-*/
+body {
+  font-family: "Crimson Text", Times, serif;
+	color: #000000;
+}
+.footer-bg {
+  background-color: #223140
+}
+#boilerplate p, footer #boilerplate p {
+    color: #9F9FA3;
+}
+#site-footer .widgettitle, #site-footer li.menu-label {
+    text-align: center;
+}
+p {
+	font-family: "Crimson Text", Times, serif;
+}
+.navbar{
+	display: block;
+}
+
+.navbar li.home-icon>a img {width: 390; height: 60px;
+}
+.navbar.sticky-navbar {
+	display: block;
+
+}
+.navbar.sticky-navbar li a {
+    font-family: Sifonn;
+}
+.wp-post-author-shortcode.left {
+    display: none;
+}
+.archive-background .rss-subscribe-link {
+    color: #56b5a4;
+}
+.global-nav {
+display: none;
+}
+.global-nav-bg {
+display: none;
+}
+.navbar .navbar-inner {
+    display: block;
+}
+.navbar {
+	font-family: 'Sifonn';
+	color:#223140;
+}
+h1.branding, h2.branding {
+    display: none;
+}
+.primary-featured-post a {
+	font-family: 'Sifonn';
+    color: #56b5a4;
+}
+h1.page-title {
+	margin-top: 50px;
+}
+.archive-background .rss-subscribe-link {
+    margin-top: 50px;
+}
+.jetpack_widget_social_icons ul {
+    list-style: none;
+    text-align: center;
+}
+.wp-block-button__link{
+	background-color: #223140;
+}
+.wp-block-button .wp-block-button__link {
+    display: inline-block;
+    padding: 14px 35px;
+}
+.sticky-nav-holder.sticky_nav_display{
+	display: block;
+}
+.row-fluid .span1, .row-fluid .span2, .row-fluid .span3, .row-fluid .span4, .row-fluid .span5, .row-fluid .span6, .row-fluid .span7, .row-fluid .span8, .row-fluid .span9, .row-fluid .span10, .row-fluid .span11, .row-fluid .span12 {
+    float: right;
+}
+.navbar.sticky-navbar li#menu-item-1126.menu-item-type-taxonomy.menu-item-object-category.menu-item-1126 a {
+    color: #223140;
+}
+.navbar.sticky-navbar li#menu-item-55.menu-item-type-taxonomy.menu-item-object-category.menu-item-55 a {
+    color: #56b5a4;
+}
+.navbar.sticky-navbar li#menu-item-56.menu-item-type-taxonomy.menu-item-object-category.menu-item-56 a {
+    color: #ff9c15;
+}
+.navbar.sticky-navbar li#menu-item-57.menu-item-type-taxonomy.menu-item-object-category.menu-item-57 a {
+    color: #ccda28;
+}
+.navbar.sticky-navbar li#menu-item-58.menu-item-type-taxonomy.menu-item-object-category.menu-item-58 a {
+    color: #e64b36;
+}
+.navbar.sticky-navbar li {
+    color: #223140;
+}
+sidebar.widget {
+    padding: 24px 0px 0px 0px;
+}
+.aside#sidebar.span4.nocontent {
+	padding:48px 0px 0px 0px;
+	border-radius:5px;
+	border-color: #233140;
+}
+.post-social > span {
+	text-transform: capitalize;
+}
+h5.top-tag, .widget h5.top-tag, .entry-content h5.top-tag {
+	text-transform: capitalize;
+}
+.navbar {
+	font-family: 'Sifonn';
+}
+span.by-author a.url.fn.n {
+	font-family: 'Sifonn';
+}
+body.sticky-nav-holder.main_nav_hide_article, body.sticky-nav-holder.sticky_nav_display {
+    display: block;
+}
+aside#view-format{
+	display: none;
+}
+.sticky-nav-holder.show {
+    visibility: visible;
+    opacity: 1;
+}
+h2 a {
+	font-family: "Sifonn";
+}
+h5 a{
+	font-family: "Sifonn";
+}
+.byline a {
+	font-family: "Julius Sans One";
+	text-transform: capitalize;
+}
+ul#menu-about-sidebar.menu a {
+	font-family: 'Sifonn';
+}
+ul#menu-about-sidebar.menu{
+	margin-right: 0px;
+}
+div.entry-content.spain10.with-hero {
+	margin-left: 0%;
+	padding-left: 0px;
+}
+#site-footer p, #site-footer li {
+    text-align: center;
+}
+.btn-primary {
+	align-content: center;
+}
+.navbar.sticky-navbar li a {
+	color: #223140
+}
+div#jp-relatedposts.jp-relatedposts{
+	display: none;
+}
+#main-nav.navbar {
+    display: block;
+		border-bottom-color: white;
+		border-top-color: white;
+}
+#main-nav.navbar .navbar-header a.custom-logo-link {
+    display: block;
+    padding-top: 8px;
+}
+#main-nav.navbar a {
+	font-family: 'Sifonn';
+	color: #223140;
+}
+li.menu-item.menu-item-type-post-type-menu-item-object-page.menu-item-has-children.dropdown.menu-item-1126 a {
+    color: #223140;
+}
+li.menu-item.menu-item-type-post-type-menu-item-object-page.menu-item-has-children.dropdown.menu-item-55 a {
+    color: #56b5a4;
+}
+li.menu-item.menu-item-type-post-type-menu-item-object-page.menu-item-has-children.dropdown.menu-item-1126 a  {
+    color: #ff9c15;
+}
+li.menu-item.menu-item-type-post-type-menu-item-object-page.menu-item-has-children.dropdown.menu-item-1126 a  {
+    color: #ccda28;
+}
+li.menu-item.menu-item-type-post-type-menu-item-object-page.menu-item-has-children.dropdown.menu-item-1126 a  {
+    color: #e64b36;
+}
+.navbar.sticky-navbar li {
+    color: #223140;
+}
+#jp-relatedposts.jprelatedposts[style]{
+	display: none !important;
+}
+#footnotes{
+	display: none;
+}
+.jp-relatedposts:after{
+	display:none;
+}
+#site-header {
+	display: block;
+	float:left;
+}
+#site-header img {
+	width:270;
+	height:100;
+}
+#main-nav {
+	display: block;
+}
+.navbar.sticky-navbar {
+    margin-bottom: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    transition-duration: 0.5s;
+}
+@media (min-width: 769px) {
+  display: none;
+  body &.main_nav_hide_article,
+  body &.sticky_nav_display {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+}

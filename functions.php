@@ -8,7 +8,7 @@ function enqueue_parent_styles() {
 add_action( 'wp_enqueue_scripts', 'wpshout_dequeue_and_then_enqueue', 100 );
 
 function wpshout_dequeue_and_then_enqueue() {
-    wpwp_dequeue_script( 'largo-navigation' );
+    wp_dequeue_script( 'largo-navigation' );
     wp_deregister_script( 'largo-navigation' );
     // Enqueue replacement child theme script
     wp_register_script('');
